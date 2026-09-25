@@ -1,0 +1,82 @@
+[
+  {
+    "label": "Nenhum item, FC 70: 0 ponto (simplificado 0)",
+    "input": {
+      "fc": "0"
+    },
+    "expected": {
+      "score": 0,
+      "level": "low",
+      "raw": {
+        "simplificado": 0
+      }
+    },
+    "originalInput": {
+      "fc": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Idade 70 e FC 80: 1 + 3 = 4, intermediária (simplificado 2)",
+    "input": {
+      "idade65": true,
+      "fc": "1"
+    },
+    "expected": {
+      "score": 4,
+      "level": "mid",
+      "raw": {
+        "simplificado": 2
+      }
+    },
+    "originalInput": {
+      "idade65": true,
+      "fc": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Cirurgia recente, câncer e FC 80: 7, intermediária e TEP provável (simplificado 3)",
+    "input": {
+      "cirurgia": true,
+      "cancer": true,
+      "fc": "1"
+    },
+    "expected": {
+      "score": 7,
+      "level": "mid",
+      "raw": {
+        "simplificado": 3
+      }
+    },
+    "originalInput": {
+      "cirurgia": true,
+      "cancer": true,
+      "fc": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "TEV prévio, dor unilateral, FC 110 e palpação dolorosa: 15, alta (simplificado 5)",
+    "input": {
+      "tev": true,
+      "dor": true,
+      "fc": "2",
+      "palpacao": true
+    },
+    "expected": {
+      "score": 15,
+      "level": "high",
+      "raw": {
+        "simplificado": 5
+      }
+    },
+    "originalInput": {
+      "tev": true,
+      "dor": true,
+      "fc": "2",
+      "palpacao": true
+    },
+    "expandedZeroOptions": []
+  }
+]

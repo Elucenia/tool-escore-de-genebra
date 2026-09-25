@@ -1,0 +1,213 @@
+{
+  "tool": {
+    "id": "escore-de-genebra",
+    "title": "Escore de Genebra revisado",
+    "short": "Probabilidade clínica de TEP (com a versão simplificada)",
+    "desc": "Calculadora do escore de Genebra revisado e simplificado: probabilidade clínica de tromboembolismo pulmonar em 3 níveis e no modelo de 2 níveis (provável ou improvável).",
+    "lead": "Estima a probabilidade pré-teste de tromboembolismo pulmonar com variáveis só objetivas, sem o julgamento de \"diagnóstico alternativo menos provável\" do escore de Wells.",
+    "spec": [
+      "pneumologia",
+      "medicina-de-emergencia",
+      "cardiologia",
+      "angiologia",
+      "clinica-medica"
+    ],
+    "fields": [
+      [
+        "idade65",
+        "Idade &gt; 65 anos",
+        "chk",
+        []
+      ],
+      [
+        "tev",
+        "TVP ou TEP prévio",
+        "chk",
+        []
+      ],
+      [
+        "cirurgia",
+        "Cirurgia (anestesia geral) ou fratura de membro inferior há ≤ 1 mês",
+        "chk",
+        []
+      ],
+      [
+        "cancer",
+        "Neoplasia ativa (ou curada há menos de 1 ano)",
+        "chk",
+        []
+      ],
+      [
+        "dor",
+        "Dor unilateral em membro inferior",
+        "chk",
+        []
+      ],
+      [
+        "hemoptise",
+        "Hemoptise",
+        "chk",
+        []
+      ],
+      [
+        "fc",
+        "Frequência cardíaca",
+        "radio",
+        {
+          "opts": {
+            "0": "&lt; 75 bpm",
+            "1": "75 a 94 bpm",
+            "2": "≥ 95 bpm"
+          }
+        }
+      ],
+      [
+        "palpacao",
+        "Dor à palpação venosa profunda e edema unilateral do membro inferior",
+        "chk",
+        []
+      ]
+    ],
+    "formula": "<p><strong>Revisado (Le Gal 2006):</strong> idade &gt; 65 = 1; TVP/TEP prévio = 3; cirurgia ou fratura ≤ 1 mês = 2; neoplasia ativa = 2; dor unilateral em membro inferior = 3; hemoptise = 2; FC 75–94 = 3 ou ≥ 95 = 5; dor à palpação venosa e edema unilateral = 4.</p><p><strong>Simplificado (Klok 2008):</strong> 1 ponto por item, e FC ≥ 95 vale 2 (75–94 vale 1).</p>",
+    "table": [
+      [
+        "Modelo",
+        "Baixa",
+        "Intermediária",
+        "Alta",
+        "TEP improvável",
+        "TEP provável"
+      ],
+      [
+        "Revisado",
+        "0–3 (8%)",
+        "4–10 (28%)",
+        "≥ 11 (74%)",
+        "0–5",
+        "≥ 6"
+      ],
+      [
+        "Simplificado",
+        "0–1",
+        "2–4",
+        "≥ 5",
+        "0–2",
+        "≥ 3"
+      ]
+    ],
+    "table_note": "Entre parênteses, prevalência de TEP na coorte de validação de Le Gal 2006. Modelos de 2 níveis conforme a diretriz da ESC 2019.",
+    "tips": [
+      "Com probabilidade baixa/intermediária (ou TEP improvável), um D-dímero normal exclui TEP; com probabilidade alta, vá direto à angiotomografia.",
+      "Acima de 50 anos, use o D-dímero ajustado para a idade (idade × 10 µg/L) para aumentar a especificidade.",
+      "Em pacientes com baixa probabilidade no pronto-socorro, os critérios PERC podem dispensar o próprio D-dímero.",
+      "Em instabilidade hemodinâmica (suspeita de TEP de alto risco), não use escores: faça ecocardiograma à beira do leito ou angiotomografia imediata.",
+      "Para o escore de Wells de TEP, veja a ferramenta do lote de cardiologia."
+    ],
+    "sources": [
+      [
+        "Le Gal G et al. Prediction of pulmonary embolism in the emergency department: the revised Geneva score. Ann Intern Med, 2006.",
+        "https://doi.org/10.7326/0003-4819-144-3-200602070-00004"
+      ],
+      [
+        "Klok FA et al. Simplification of the revised Geneva score for assessing clinical probability of pulmonary embolism. Arch Intern Med, 2008.",
+        "https://doi.org/10.1001/archinte.168.19.2131"
+      ],
+      [
+        "Konstantinides SV et al. 2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism developed in collaboration with the European Respiratory Society (ERS). Eur Heart J, 2020.",
+        "https://doi.org/10.1093/eurheartj/ehz405"
+      ]
+    ],
+    "cases": [
+      [
+        "Nenhum item, FC 70: 0 ponto (simplificado 0)",
+        {
+          "fc": "0"
+        },
+        {
+          "score": 0,
+          "level": "low",
+          "raw": {
+            "simplificado": 0
+          }
+        }
+      ],
+      [
+        "Idade 70 e FC 80: 1 + 3 = 4, intermediária (simplificado 2)",
+        {
+          "idade65": true,
+          "fc": "1"
+        },
+        {
+          "score": 4,
+          "level": "mid",
+          "raw": {
+            "simplificado": 2
+          }
+        }
+      ],
+      [
+        "Cirurgia recente, câncer e FC 80: 7, intermediária e TEP provável (simplificado 3)",
+        {
+          "cirurgia": true,
+          "cancer": true,
+          "fc": "1"
+        },
+        {
+          "score": 7,
+          "level": "mid",
+          "raw": {
+            "simplificado": 3
+          }
+        }
+      ],
+      [
+        "TEV prévio, dor unilateral, FC 110 e palpação dolorosa: 15, alta (simplificado 5)",
+        {
+          "tev": true,
+          "dor": true,
+          "fc": "2",
+          "palpacao": true
+        },
+        {
+          "score": 15,
+          "level": "high",
+          "raw": {
+            "simplificado": 5
+          }
+        }
+      ]
+    ],
+    "batch": "torax-vascular",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cardiotoracica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/torax-vascular.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/torax-vascular.php",
+    "sha256": "e99bbd1938580ff9b46e0252fdd8cb72e87c63869f934005b8ef6d807ce8b6e2",
+    "bytes": 91275
+  },
+  "clinicalValidation": "not-performed"
+}
