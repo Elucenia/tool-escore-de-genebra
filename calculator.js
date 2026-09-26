@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-escore-de-genebra · Elucenia · https://github.com/Elucenia/tool-escore-de-genebra
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"escore-de-genebra","title":"Escore de Genebra revisado","fields":[["idade65","Idade &gt; 65 anos","chk",[]],["tev","TVP ou TEP prévio","chk",[]],["cirurgia","Cirurgia (anestesia geral) ou fratura de membro inferior há ≤ 1 mês","chk",[]],["cancer","Neoplasia ativa (ou curada há menos de 1 ano)","chk",[]],["dor","Dor unilateral em membro inferior","chk",[]],["hemoptise","Hemoptise","chk",[]],["fc","Frequência cardíaca","radio",{"opts":{"0":"&lt; 75 bpm","1":"75 a 94 bpm","2":"≥ 95 bpm"}}],["palpacao","Dor à palpação venosa profunda e edema unilateral do membro inferior","chk",[]]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
