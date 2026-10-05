@@ -5,6 +5,7 @@
     "short": "Probabilidade clínica de TEP (com a versão simplificada)",
     "desc": "Calculadora do escore de Genebra revisado e simplificado: probabilidade clínica de tromboembolismo pulmonar em 3 níveis e no modelo de 2 níveis (provável ou improvável).",
     "lead": "Estima a probabilidade pré-teste de tromboembolismo pulmonar com variáveis só objetivas, sem o julgamento de \"diagnóstico alternativo menos provável\" do escore de Wells.",
+    "kind": "Calculadora",
     "spec": [
       "pneumologia",
       "medicina-de-emergencia",
@@ -17,37 +18,37 @@
         "idade65",
         "Idade &gt; 65 anos",
         "chk",
-        []
+        {}
       ],
       [
         "tev",
         "TVP ou TEP prévio",
         "chk",
-        []
+        {}
       ],
       [
         "cirurgia",
         "Cirurgia (anestesia geral) ou fratura de membro inferior há ≤ 1 mês",
         "chk",
-        []
+        {}
       ],
       [
         "cancer",
         "Neoplasia ativa (ou curada há menos de 1 ano)",
         "chk",
-        []
+        {}
       ],
       [
         "dor",
         "Dor unilateral em membro inferior",
         "chk",
-        []
+        {}
       ],
       [
         "hemoptise",
         "Hemoptise",
         "chk",
-        []
+        {}
       ],
       [
         "fc",
@@ -65,44 +66,10 @@
         "palpacao",
         "Dor à palpação venosa profunda e edema unilateral do membro inferior",
         "chk",
-        []
+        {}
       ]
     ],
     "formula": "<p><strong>Revisado (Le Gal 2006):</strong> idade &gt; 65 = 1; TVP/TEP prévio = 3; cirurgia ou fratura ≤ 1 mês = 2; neoplasia ativa = 2; dor unilateral em membro inferior = 3; hemoptise = 2; FC 75–94 = 3 ou ≥ 95 = 5; dor à palpação venosa e edema unilateral = 4.</p><p><strong>Simplificado (Klok 2008):</strong> 1 ponto por item, e FC ≥ 95 vale 2 (75–94 vale 1).</p>",
-    "table": [
-      [
-        "Modelo",
-        "Baixa",
-        "Intermediária",
-        "Alta",
-        "TEP improvável",
-        "TEP provável"
-      ],
-      [
-        "Revisado",
-        "0–3 (8%)",
-        "4–10 (28%)",
-        "≥ 11 (74%)",
-        "0–5",
-        "≥ 6"
-      ],
-      [
-        "Simplificado",
-        "0–1",
-        "2–4",
-        "≥ 5",
-        "0–2",
-        "≥ 3"
-      ]
-    ],
-    "table_note": "Entre parênteses, prevalência de TEP na coorte de validação de Le Gal 2006. Modelos de 2 níveis conforme a diretriz da ESC 2019.",
-    "tips": [
-      "Com probabilidade baixa/intermediária (ou TEP improvável), um D-dímero normal exclui TEP; com probabilidade alta, vá direto à angiotomografia.",
-      "Acima de 50 anos, use o D-dímero ajustado para a idade (idade × 10 µg/L) para aumentar a especificidade.",
-      "Em pacientes com baixa probabilidade no pronto-socorro, os critérios PERC podem dispensar o próprio D-dímero.",
-      "Em instabilidade hemodinâmica (suspeita de TEP de alto risco), não use escores: faça ecocardiograma à beira do leito ou angiotomografia imediata.",
-      "Para o escore de Wells de TEP, veja a ferramenta do lote de cardiologia."
-    ],
     "sources": [
       [
         "Le Gal G et al. Prediction of pulmonary embolism in the emergency department: the revised Geneva score. Ann Intern Med, 2006.",
@@ -177,9 +144,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -188,17 +152,547 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T19:23:48.231Z",
+      "total": 384,
+      "passed": 384,
+      "sourceRowCount": 384,
+      "uniqueApiInputCount": 384,
+      "sourceContextCount": 384,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "cfa905f3b46d274cf588a1ea6d8d87466ef8390726609b93b715d54867f589f9",
+        "total": 384,
+        "bankRowCount": 384,
+        "uniqueApiInputCount": 384,
+        "sourceContextCount": 384,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/eight-diagnostic-independent-expectations-final26.json",
+            "sha256": "152a977a91b3f4279cac6a749638cae27a306f0bb072fa2400843da0db1e8268"
+          },
+          {
+            "file": "reports/review-20261003/eight-diagnostic-primary-source-review-final26.json",
+            "sha256": "8e4fe23dcd12fa323c509ec5432d30d841fe378f42ce1b05abc2724fa540481b"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/eight-diagnostic-independent-source-check-final26.json",
+          "sha256": "9925c0c432d78f268a3a5dd4d52cef5de566b192d5c3de6e7bbd6895eaf9d2b5"
+        },
+        "packagingRequirement": "Compose separately owned source/rubric/edition changes and fresh build/package/browser bindings before publication."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 384,
+        "uniqueApiInputs": 384,
+        "duplicateRows": 0,
+        "expectationAudit": {
+          "file": "reports/review-20261003/eight-diagnostic-independent-expectations-final26.json",
+          "sha256": "152a977a91b3f4279cac6a749638cae27a306f0bb072fa2400843da0db1e8268"
+        }
+      },
+      "scope": "original2006 Table2 sum plus simplified official ESC2019Table5 sum; clinical probabilities/management excluded; only exact raw.score projected, no diagnosis/risk/rubric approval.",
+      "sources": [
+        {
+          "contributedPrimaryObservations": {
+            "file": "reports/review-20261003/eight-diagnostic-primary-source-review-final26.json",
+            "sha256": "8e4fe23dcd12fa323c509ec5432d30d841fe378f42ce1b05abc2724fa540481b"
+          },
+          "id": "escore-de-genebra",
+          "edition": "LeGal2006 AnnInternMed144:165–171 DOI10.7326/0003-4819-144-3-200602070-00004; official ESC/ERS2019 Table5 simplified version",
+          "urls": [
+            "https://rebelem.com/wp-content/uploads/2018/11/Revised-Geneva.pdf",
+            "https://academic.oup.com/eurheartj/article/41/4/543/5556136",
+            "https://publications.ersnet.org/content/erj/early/2019/08/29/13993003.01647-2019.full.pdf"
+          ],
+          "files": [
+            "geneva2006.pdf",
+            "geneva2006-p4.png"
+          ],
+          "access": "Original2006 article PDF mirrored publicly: Methods read and Table2 PDFpage4/printed168 rendered and visually read. Official ESC2019Table5 indexed complete table actually read; direct OUP reopening failed500. Original Klok2008 full table not directly read, so simplified arithmetic is explicitly tied to official2019 Table5.",
+          "population": "Original2006 derivation965 patients at three European EDs with suspected PE. Excludes ongoing anticoagulation, CT contraindications including pregnancy/CrCl<30mL/min, shock suggesting massive PE and life expectancy<3months; no universal exclusion inference for newer algorithms.",
+          "rules": {
+            "original": {
+              "age": 1,
+              "previousVTE": 3,
+              "surgeryFracture": 2,
+              "activeCancer": 2,
+              "unilateralPain": 3,
+              "hemoptysis": 2,
+              "heartRate": [
+                0,
+                3,
+                5
+              ],
+              "palpationAndEdema": 4
+            },
+            "simplified": {
+              "eachOfSevenFlags": 1,
+              "heartRate": [
+                0,
+                1,
+                2
+              ]
+            }
+          },
+          "findings": [
+            {
+              "area": "simplified source",
+              "status": "edition scoped",
+              "source": "Official ESC2019Table5 shows both original and simplified point weights and separate2/3-level categories.",
+              "current": "Only point totals are tested. This does not certify original Klok2008 full-text conformance or management."
+            }
+          ],
+          "notVerified": [
+            "OriginalKlok2008 full paper, patient rubric implementation,2/3-level clinical probabilities and diagnostic management."
+          ],
+          "currentMethodVersion": "Revised Geneva/Le Gal 2006 e Simplified Revised Geneva/Klok 2008; pesos separados",
+          "currentToolSha256": "fc0201ef706e8cd8e30d7fb32ff2af3f4642504a537befe078b3c2768bc3eead"
+        }
+      ],
+      "evidencePath": "reports/review-20261003/eight-diagnostic-independent-source-check-final26.json",
+      "evidenceSha256": "9925c0c432d78f268a3a5dd4d52cef5de566b192d5c3de6e7bbd6895eaf9d2b5",
+      "independentPeer": {
+        "status": "passed-scoped-numeric",
+        "evidence": {
+          "file": "reports/review-20261003/eight-diagnostic-numeric-independent-peer-verify-final27.json",
+          "sha256": "e7bddba5c7de286f91fa8c431512f512849302646394d88663afe8142e079a7d"
+        },
+        "scope": "Independent primary table/abstract reading, own selected-point expectations persisted before engines, exact numeric three-adapter Node/isolated Chromium. Clinical/risk/rubric/full-method conformance excluded; McIsaac final-clamp findings retained and excluded from this six-method projection."
+      },
+      "freshAdapterExecutions": 1152,
+      "freshVmExecutions": 1152,
+      "actualBrowserEvidenceScope": "Old actual Chromium receipt uses only website adapter; three adapters have independently completed Node/VM and new Verify Chromium peer. This bank explicitly names original website-only browser observations; no reassignment to other mirrors.",
+      "implementations": [
+        {
+          "id": "escore-de-genebra",
+          "app": "website",
+          "file": "apps/website/private/tool-code/escore-de-genebra/calculator.js",
+          "sha256": "9fa81b0872d1d64e13c77fb5b04cc9b4a7f7b3d6cbf75b04af8e6338232f4f75"
+        },
+        {
+          "id": "escore-de-genebra",
+          "app": "dashboard",
+          "file": "apps/dashboard/private/tool-code/escore-de-genebra/calculator.js",
+          "sha256": "9fa81b0872d1d64e13c77fb5b04cc9b4a7f7b3d6cbf75b04af8e6338232f4f75"
+        },
+        {
+          "id": "escore-de-genebra",
+          "app": "command-center",
+          "file": "apps/command-center/private/tool-code/escore-de-genebra/calculator.js",
+          "sha256": "9fa81b0872d1d64e13c77fb5b04cc9b4a7f7b3d6cbf75b04af8e6338232f4f75"
+        }
+      ],
+      "qualifications": [
+        "OriginalKlok2008 full paper, patient rubric implementation,2/3-level clinical probabilities and diagnostic management.",
+        "Primary-source reading and access are recorded by the contributing source reviewer and independent numeric peer; this integration does not claim another full source reading.",
+        "Only raw.score selected-point arithmetic is included. Clinical categories, main text, private level/verdict/note/rows, prognosis, diagnosis, management and unmeasured feature classification are excluded.",
+        "All source scenarios in this bank and the original donor reports remain retained. Mirror/runtime calculations do not multiply scenario counts. Inline four examples are a subset of the complete downloadable bank.",
+        "Source fields, rubric/edition labels, clinical scope notes and localization changes have separate ownership and must be composed without replacing whole catalogs. All862 historic fixtures/tolerances and approval flags remain unchanged.",
+        "Fresh source/build/packages and browser journey bindings are required before publication. No already-served website or final package proof is claimed by this preparation."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "metadataPackagingPeer": {
+        "status": "passed",
+        "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+        "peer": {
+          "file": "reports/review-20261003/six-diagnostic-bank-metadata-independent-review-western-final27.json",
+          "sha256": "8f308a904c18e2d57f6d6b37c660021e399df5bd766589b89c9c03f2fa7d141c"
+        },
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "prospectiveSource27Bindings": [
+        {
+          "file": "apps/website/private/tool-code/escore-de-genebra/calculator.js",
+          "sha256": "9fa81b0872d1d64e13c77fb5b04cc9b4a7f7b3d6cbf75b04af8e6338232f4f75"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/escore-de-genebra/calculator.js",
+          "sha256": "9fa81b0872d1d64e13c77fb5b04cc9b4a7f7b3d6cbf75b04af8e6338232f4f75"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/escore-de-genebra/calculator.js",
+          "sha256": "9fa81b0872d1d64e13c77fb5b04cc9b4a7f7b3d6cbf75b04af8e6338232f4f75"
+        }
+      ],
+      "prospectiveSource27Replay": {
+        "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+        "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Revised Geneva/Le Gal 2006 e Simplified Revised Geneva/Klok 2008; pesos separados",
+    "implementationVersion": "escore-de-genebra@native-2026-10-03+9fa81b0872d1",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/16461960/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Revisado (Le Gal 2006): idade > 65 = 1; TVP/TEP prévio = 3; cirurgia ou fratura ≤ 1 mês = 2; neoplasia ativa = 2; dor unilateral em membro inferior = 3; hemoptise = 2; FC 75–94 = 3 ou ≥ 95 = 5; dor à palpação venosa e edema unilateral = 4. Simplificado (Klok 2008): 1 ponto por item, e FC ≥ 95 vale 2 (75–94 vale 1).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "idade65",
+            "label": "Idade &gt; 65 anos",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "tev",
+            "label": "TVP ou TEP prévio",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "cirurgia",
+            "label": "Cirurgia (anestesia geral) ou fratura de membro inferior há ≤ 1 mês",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "cancer",
+            "label": "Neoplasia ativa (ou curada há menos de 1 ano)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "dor",
+            "label": "Dor unilateral em membro inferior",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "hemoptise",
+            "label": "Hemoptise",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "fc",
+            "label": "Frequência cardíaca",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "&lt; 75 bpm",
+              "1": "75 a 94 bpm",
+              "2": "≥ 95 bpm"
+            }
+          },
+          {
+            "key": "palpacao",
+            "label": "Dor à palpação venosa profunda e edema unilateral do membro inferior",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "7f8e839347c0f8d9ebde1d09c44475bb69296d8d2e9b1a1d3d8202ce64c9dbb4"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Le Gal G et al. Prediction of pulmonary embolism in the emergency department: the revised Geneva score. Ann Intern Med, 2006.",
+          "url": "https://doi.org/10.7326/0003-4819-144-3-200602070-00004",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Prediction of pulmonary embolism in the emergency department: the revised Geneva score.",
+            "year": "2006",
+            "firstPublicationDate": "2006-02-01",
+            "doi": "10.7326/0003-4819-144-3-200602070-00004",
+            "pmid": "16461960",
+            "journal": "Annals of internal medicine",
+            "authors": "Le Gal G, Righini M, Roy PM, Sanchez O, Aujesky D, Bounameaux H, Perrier A."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/16461960/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "9f798643636a2cc0dfa85afd907fab5456b530c4d69e8458ecf0e1d9e619c937",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Klok FA et al. Simplification of the revised Geneva score for assessing clinical probability of pulmonary embolism. Arch Intern Med, 2008.",
+          "url": "https://doi.org/10.1001/archinte.168.19.2131",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Simplification of the revised Geneva score for assessing clinical probability of pulmonary embolism.",
+            "year": "2008",
+            "firstPublicationDate": "2008-10-01",
+            "doi": "10.1001/archinte.168.19.2131",
+            "pmid": "18955643",
+            "journal": "Archives of internal medicine",
+            "authors": "Klok FA, Mos IC, Nijkeuter M, Righini M, Perrier A, Le Gal G, Huisman MV."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/18955643/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "6fb8e947d7d8232be9f929b6b17906f334affcfde40cb17fcf936f8530f2b309",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Konstantinides SV et al. 2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism developed in collaboration with the European Respiratory Society (ERS). Eur Heart J, 2020.",
+          "url": "https://doi.org/10.1093/eurheartj/ehz405",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism developed in collaboration with the European Respiratory Society (ERS).",
+            "year": "2020",
+            "firstPublicationDate": "2020-01-01",
+            "doi": "10.1093/eurheartj/ehz405",
+            "pmid": "31504429",
+            "journal": "European heart journal",
+            "authors": "Konstantinides SV, Meyer G, Becattini C, Bueno H, Geersing GJ, Harjola VP, Huisman MV, Humbert M, Jennings CS, Jiménez D, Kucher N, Lang IM, Lankeit M, Lorusso R, Mazzolai L, Meneveau N, Ní Áinle F, Prandoni P, Pruszczyk P, Righini M, Torbicki A, Van Belle E, Zamorano JL, ESC Scientific Document Group."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/31504429/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T19:23:48.231Z",
+        "total": 384,
+        "passed": 384,
+        "sourceRowCount": 384,
+        "uniqueApiInputCount": 384,
+        "sourceContextCount": 384,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "cfa905f3b46d274cf588a1ea6d8d87466ef8390726609b93b715d54867f589f9",
+          "total": 384,
+          "bankRowCount": 384,
+          "uniqueApiInputCount": 384,
+          "sourceContextCount": 384,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/eight-diagnostic-independent-expectations-final26.json",
+              "sha256": "152a977a91b3f4279cac6a749638cae27a306f0bb072fa2400843da0db1e8268"
+            },
+            {
+              "file": "reports/review-20261003/eight-diagnostic-primary-source-review-final26.json",
+              "sha256": "8e4fe23dcd12fa323c509ec5432d30d841fe378f42ce1b05abc2724fa540481b"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/eight-diagnostic-independent-source-check-final26.json",
+            "sha256": "9925c0c432d78f268a3a5dd4d52cef5de566b192d5c3de6e7bbd6895eaf9d2b5"
+          },
+          "packagingRequirement": "Compose separately owned source/rubric/edition changes and fresh build/package/browser bindings before publication."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 384,
+          "uniqueApiInputs": 384,
+          "duplicateRows": 0,
+          "expectationAudit": {
+            "file": "reports/review-20261003/eight-diagnostic-independent-expectations-final26.json",
+            "sha256": "152a977a91b3f4279cac6a749638cae27a306f0bb072fa2400843da0db1e8268"
+          }
+        },
+        "scope": "original2006 Table2 sum plus simplified official ESC2019Table5 sum; clinical probabilities/management excluded; only exact raw.score projected, no diagnosis/risk/rubric approval.",
+        "sources": [
+          {
+            "contributedPrimaryObservations": {
+              "file": "reports/review-20261003/eight-diagnostic-primary-source-review-final26.json",
+              "sha256": "8e4fe23dcd12fa323c509ec5432d30d841fe378f42ce1b05abc2724fa540481b"
+            },
+            "id": "escore-de-genebra",
+            "edition": "LeGal2006 AnnInternMed144:165–171 DOI10.7326/0003-4819-144-3-200602070-00004; official ESC/ERS2019 Table5 simplified version",
+            "urls": [
+              "https://rebelem.com/wp-content/uploads/2018/11/Revised-Geneva.pdf",
+              "https://academic.oup.com/eurheartj/article/41/4/543/5556136",
+              "https://publications.ersnet.org/content/erj/early/2019/08/29/13993003.01647-2019.full.pdf"
+            ],
+            "files": [
+              "geneva2006.pdf",
+              "geneva2006-p4.png"
+            ],
+            "access": "Original2006 article PDF mirrored publicly: Methods read and Table2 PDFpage4/printed168 rendered and visually read. Official ESC2019Table5 indexed complete table actually read; direct OUP reopening failed500. Original Klok2008 full table not directly read, so simplified arithmetic is explicitly tied to official2019 Table5.",
+            "population": "Original2006 derivation965 patients at three European EDs with suspected PE. Excludes ongoing anticoagulation, CT contraindications including pregnancy/CrCl<30mL/min, shock suggesting massive PE and life expectancy<3months; no universal exclusion inference for newer algorithms.",
+            "rules": {
+              "original": {
+                "age": 1,
+                "previousVTE": 3,
+                "surgeryFracture": 2,
+                "activeCancer": 2,
+                "unilateralPain": 3,
+                "hemoptysis": 2,
+                "heartRate": [
+                  0,
+                  3,
+                  5
+                ],
+                "palpationAndEdema": 4
+              },
+              "simplified": {
+                "eachOfSevenFlags": 1,
+                "heartRate": [
+                  0,
+                  1,
+                  2
+                ]
+              }
+            },
+            "findings": [
+              {
+                "area": "simplified source",
+                "status": "edition scoped",
+                "source": "Official ESC2019Table5 shows both original and simplified point weights and separate2/3-level categories.",
+                "current": "Only point totals are tested. This does not certify original Klok2008 full-text conformance or management."
+              }
+            ],
+            "notVerified": [
+              "OriginalKlok2008 full paper, patient rubric implementation,2/3-level clinical probabilities and diagnostic management."
+            ],
+            "currentMethodVersion": "Revised Geneva/Le Gal 2006 e Simplified Revised Geneva/Klok 2008; pesos separados",
+            "currentToolSha256": "fc0201ef706e8cd8e30d7fb32ff2af3f4642504a537befe078b3c2768bc3eead"
+          }
+        ],
+        "evidencePath": "reports/review-20261003/eight-diagnostic-independent-source-check-final26.json",
+        "evidenceSha256": "9925c0c432d78f268a3a5dd4d52cef5de566b192d5c3de6e7bbd6895eaf9d2b5",
+        "independentPeer": {
+          "status": "passed-scoped-numeric",
+          "evidence": {
+            "file": "reports/review-20261003/eight-diagnostic-numeric-independent-peer-verify-final27.json",
+            "sha256": "e7bddba5c7de286f91fa8c431512f512849302646394d88663afe8142e079a7d"
+          },
+          "scope": "Independent primary table/abstract reading, own selected-point expectations persisted before engines, exact numeric three-adapter Node/isolated Chromium. Clinical/risk/rubric/full-method conformance excluded; McIsaac final-clamp findings retained and excluded from this six-method projection."
+        },
+        "freshAdapterExecutions": 1152,
+        "freshVmExecutions": 1152,
+        "actualBrowserEvidenceScope": "Old actual Chromium receipt uses only website adapter; three adapters have independently completed Node/VM and new Verify Chromium peer. This bank explicitly names original website-only browser observations; no reassignment to other mirrors.",
+        "implementations": [
+          {
+            "id": "escore-de-genebra",
+            "app": "website",
+            "file": "apps/website/private/tool-code/escore-de-genebra/calculator.js",
+            "sha256": "9fa81b0872d1d64e13c77fb5b04cc9b4a7f7b3d6cbf75b04af8e6338232f4f75"
+          },
+          {
+            "id": "escore-de-genebra",
+            "app": "dashboard",
+            "file": "apps/dashboard/private/tool-code/escore-de-genebra/calculator.js",
+            "sha256": "9fa81b0872d1d64e13c77fb5b04cc9b4a7f7b3d6cbf75b04af8e6338232f4f75"
+          },
+          {
+            "id": "escore-de-genebra",
+            "app": "command-center",
+            "file": "apps/command-center/private/tool-code/escore-de-genebra/calculator.js",
+            "sha256": "9fa81b0872d1d64e13c77fb5b04cc9b4a7f7b3d6cbf75b04af8e6338232f4f75"
+          }
+        ],
+        "qualifications": [
+          "OriginalKlok2008 full paper, patient rubric implementation,2/3-level clinical probabilities and diagnostic management.",
+          "Primary-source reading and access are recorded by the contributing source reviewer and independent numeric peer; this integration does not claim another full source reading.",
+          "Only raw.score selected-point arithmetic is included. Clinical categories, main text, private level/verdict/note/rows, prognosis, diagnosis, management and unmeasured feature classification are excluded.",
+          "All source scenarios in this bank and the original donor reports remain retained. Mirror/runtime calculations do not multiply scenario counts. Inline four examples are a subset of the complete downloadable bank.",
+          "Source fields, rubric/edition labels, clinical scope notes and localization changes have separate ownership and must be composed without replacing whole catalogs. All862 historic fixtures/tolerances and approval flags remain unchanged.",
+          "Fresh source/build/packages and browser journey bindings are required before publication. No already-served website or final package proof is claimed by this preparation."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "metadataPackagingPeer": {
+          "status": "passed",
+          "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+          "peer": {
+            "file": "reports/review-20261003/six-diagnostic-bank-metadata-independent-review-western-final27.json",
+            "sha256": "8f308a904c18e2d57f6d6b37c660021e399df5bd766589b89c9c03f2fa7d141c"
+          },
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "prospectiveSource27Bindings": [
+          {
+            "file": "apps/website/private/tool-code/escore-de-genebra/calculator.js",
+            "sha256": "9fa81b0872d1d64e13c77fb5b04cc9b4a7f7b3d6cbf75b04af8e6338232f4f75"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/escore-de-genebra/calculator.js",
+            "sha256": "9fa81b0872d1d64e13c77fb5b04cc9b4a7f7b3d6cbf75b04af8e6338232f4f75"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/escore-de-genebra/calculator.js",
+            "sha256": "9fa81b0872d1d64e13c77fb5b04cc9b4a7f7b3d6cbf75b04af8e6338232f4f75"
+          }
+        ],
+        "prospectiveSource27Replay": {
+          "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+          "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "9fa81b0872d1d64e13c77fb5b04cc9b4a7f7b3d6cbf75b04af8e6338232f4f75"
+    },
+    "limits": "O Genebra revisado de 2006 foi estudado em pessoas com suspeita clínica de embolia pulmonar em emergência. A pontuação exige as definições da edição, incluindo cirurgia/fratura no mês anterior e categorias específicas de frequência cardíaca; a versão simplificada possui pesos próprios. Probabilidade baixa não significa ausência de embolia e precisa ser integrada ao protocolo diagnóstico.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.898Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Versão simplificada 2008 e definição integral de malignidade ativa não conferidas neste resumo. Categoria baixa tinha embolia observada, não risco zero."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/escore-de-genebra/calculator.js",
+    "bytes": 5829,
+    "sha256": "9fa81b0872d1d64e13c77fb5b04cc9b4a7f7b3d6cbf75b04af8e6338232f4f75"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "1675a8f20158eca8a3a3e12f50402a0acb528c5958a15304a57c275839cafba7",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "b867f3e9b97ab7cab4b81ad42393e3f79b6a497f0c582e027f841e46896907e1",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "b867f3e9b97ab7cab4b81ad42393e3f79b6a497f0c582e027f841e46896907e1",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

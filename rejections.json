@@ -1,0 +1,217 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean idade65",
+    "input": {
+      "fc": "0",
+      "idade65": "2",
+      "tev": false,
+      "cirurgia": false,
+      "cancer": false,
+      "dor": false,
+      "hemoptise": false,
+      "palpacao": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade65"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean tev",
+    "input": {
+      "fc": "0",
+      "idade65": false,
+      "tev": "2",
+      "cirurgia": false,
+      "cancer": false,
+      "dor": false,
+      "hemoptise": false,
+      "palpacao": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tev"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean cirurgia",
+    "input": {
+      "fc": "0",
+      "idade65": false,
+      "tev": false,
+      "cirurgia": "2",
+      "cancer": false,
+      "dor": false,
+      "hemoptise": false,
+      "palpacao": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cirurgia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean cancer",
+    "input": {
+      "fc": "0",
+      "idade65": false,
+      "tev": false,
+      "cirurgia": false,
+      "cancer": "2",
+      "dor": false,
+      "hemoptise": false,
+      "palpacao": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cancer"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean dor",
+    "input": {
+      "fc": "0",
+      "idade65": false,
+      "tev": false,
+      "cirurgia": false,
+      "cancer": false,
+      "dor": "2",
+      "hemoptise": false,
+      "palpacao": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dor"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean hemoptise",
+    "input": {
+      "fc": "0",
+      "idade65": false,
+      "tev": false,
+      "cirurgia": false,
+      "cancer": false,
+      "dor": false,
+      "hemoptise": "2",
+      "palpacao": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hemoptise"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field fc",
+    "input": {
+      "idade65": false,
+      "tev": false,
+      "cirurgia": false,
+      "cancer": false,
+      "dor": false,
+      "hemoptise": false,
+      "palpacao": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field fc",
+    "input": {
+      "fc": "",
+      "idade65": false,
+      "tev": false,
+      "cirurgia": false,
+      "cancer": false,
+      "dor": false,
+      "hemoptise": false,
+      "palpacao": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option fc",
+    "input": {
+      "fc": "__ELUCENIA_INVALID_OPTION__",
+      "idade65": false,
+      "tev": false,
+      "cirurgia": false,
+      "cancer": false,
+      "dor": false,
+      "hemoptise": false,
+      "palpacao": false
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "fc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean palpacao",
+    "input": {
+      "fc": "0",
+      "idade65": false,
+      "tev": false,
+      "cirurgia": false,
+      "cancer": false,
+      "dor": false,
+      "hemoptise": false,
+      "palpacao": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "palpacao"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
