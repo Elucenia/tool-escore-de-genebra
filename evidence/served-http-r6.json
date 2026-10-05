@@ -1,0 +1,1045 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "escore-de-genebra",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/escore-de-genebra/calculator.js",
+    "sha256": "9fa81b0872d1d64e13c77fb5b04cc9b4a7f7b3d6cbf75b04af8e6338232f4f75",
+    "bytes": 5829
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 4,
+    "replayed": 4,
+    "passed": 4,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "escore-de-genebra",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Nenhum item, FC 70: 0 ponto (simplificado 0)",
+      "originalInput": {
+        "fc": "0"
+      },
+      "input": {
+        "fc": "0",
+        "idade65": false,
+        "tev": false,
+        "cirurgia": false,
+        "cancer": false,
+        "dor": false,
+        "hemoptise": false,
+        "palpacao": false
+      },
+      "amendments": [
+        {
+          "field": "idade65",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "tev",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "cirurgia",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "cancer",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "dor",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "hemoptise",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "palpacao",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "score": 0,
+        "level": "low",
+        "raw": {
+          "simplificado": 0
+        }
+      },
+      "recordedResult": {
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "Escore de Genebra revisado",
+        "raw": {
+          "score": 0,
+          "simplificado": 0
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escore-de-genebra/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "fc": "0",
+            "idade65": false,
+            "tev": false,
+            "cirurgia": false,
+            "cancer": false,
+            "dor": false,
+            "hemoptise": false,
+            "palpacao": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escore-de-genebra/calculate",
+          "startedAt": "2026-10-05T17:37:30.678Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escore-de-genebra",
+              "main": [
+                "0",
+                "pontos"
+              ],
+              "label": "Escore de Genebra revisado",
+              "raw": {
+                "score": 0,
+                "simplificado": 0
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "ceef417e7a2c4faaf7f6ec5a9da7eab1bbcec44449aea13ee586bbc79d7ae482",
+          "bytes": 168,
+          "elapsedMs": 4.4623999999894295
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escore-de-genebra/calculate",
+        "startedAt": "2026-10-05T17:37:30.678Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escore-de-genebra",
+            "main": [
+              "0",
+              "pontos"
+            ],
+            "label": "Escore de Genebra revisado",
+            "raw": {
+              "score": 0,
+              "simplificado": 0
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "ceef417e7a2c4faaf7f6ec5a9da7eab1bbcec44449aea13ee586bbc79d7ae482",
+        "bytes": 168,
+        "elapsedMs": 4.4623999999894295
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.simplificado",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.simplificado",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "0",
+            "obtained": "0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escore-de-genebra",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Idade 70 e FC 80: 1 + 3 = 4, intermediária (simplificado 2)",
+      "originalInput": {
+        "idade65": true,
+        "fc": "1"
+      },
+      "input": {
+        "idade65": true,
+        "fc": "1",
+        "tev": false,
+        "cirurgia": false,
+        "cancer": false,
+        "dor": false,
+        "hemoptise": false,
+        "palpacao": false
+      },
+      "amendments": [
+        {
+          "field": "tev",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "cirurgia",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "cancer",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "dor",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "hemoptise",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "palpacao",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "score": 4,
+        "level": "mid",
+        "raw": {
+          "simplificado": 2
+        }
+      },
+      "recordedResult": {
+        "main": [
+          "4",
+          "pontos"
+        ],
+        "label": "Escore de Genebra revisado",
+        "raw": {
+          "score": 4,
+          "simplificado": 2
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escore-de-genebra/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "idade65": true,
+            "fc": "1",
+            "tev": false,
+            "cirurgia": false,
+            "cancer": false,
+            "dor": false,
+            "hemoptise": false,
+            "palpacao": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escore-de-genebra/calculate",
+          "startedAt": "2026-10-05T17:37:30.990Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escore-de-genebra",
+              "main": [
+                "4",
+                "pontos"
+              ],
+              "label": "Escore de Genebra revisado",
+              "raw": {
+                "score": 4,
+                "simplificado": 2
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "6cb4a90aa29aea95095d5afcd475135f71aa6d2ef5b4b785414a72b9c8be03a9",
+          "bytes": 168,
+          "elapsedMs": 4.658100000000559
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escore-de-genebra/calculate",
+        "startedAt": "2026-10-05T17:37:30.990Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escore-de-genebra",
+            "main": [
+              "4",
+              "pontos"
+            ],
+            "label": "Escore de Genebra revisado",
+            "raw": {
+              "score": 4,
+              "simplificado": 2
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "6cb4a90aa29aea95095d5afcd475135f71aa6d2ef5b4b785414a72b9c8be03a9",
+        "bytes": 168,
+        "elapsedMs": 4.658100000000559
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.simplificado",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 4,
+            "obtained": 4,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 4,
+            "obtained": 4,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.simplificado",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "4",
+            "obtained": "4",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escore-de-genebra",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Cirurgia recente, câncer e FC 80: 7, intermediária e TEP provável (simplificado 3)",
+      "originalInput": {
+        "cirurgia": true,
+        "cancer": true,
+        "fc": "1"
+      },
+      "input": {
+        "cirurgia": true,
+        "cancer": true,
+        "fc": "1",
+        "idade65": false,
+        "tev": false,
+        "dor": false,
+        "hemoptise": false,
+        "palpacao": false
+      },
+      "amendments": [
+        {
+          "field": "idade65",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "tev",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "dor",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "hemoptise",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "palpacao",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "score": 7,
+        "level": "mid",
+        "raw": {
+          "simplificado": 3
+        }
+      },
+      "recordedResult": {
+        "main": [
+          "7",
+          "pontos"
+        ],
+        "label": "Escore de Genebra revisado",
+        "raw": {
+          "score": 7,
+          "simplificado": 3
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escore-de-genebra/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "cirurgia": true,
+            "cancer": true,
+            "fc": "1",
+            "idade65": false,
+            "tev": false,
+            "dor": false,
+            "hemoptise": false,
+            "palpacao": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escore-de-genebra/calculate",
+          "startedAt": "2026-10-05T17:37:31.303Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escore-de-genebra",
+              "main": [
+                "7",
+                "pontos"
+              ],
+              "label": "Escore de Genebra revisado",
+              "raw": {
+                "score": 7,
+                "simplificado": 3
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "96faed5361b06b09fa51b607b2420a8b51007ab32053c79bd815552fe31b4335",
+          "bytes": 168,
+          "elapsedMs": 3.8932999999960884
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escore-de-genebra/calculate",
+        "startedAt": "2026-10-05T17:37:31.303Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escore-de-genebra",
+            "main": [
+              "7",
+              "pontos"
+            ],
+            "label": "Escore de Genebra revisado",
+            "raw": {
+              "score": 7,
+              "simplificado": 3
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "96faed5361b06b09fa51b607b2420a8b51007ab32053c79bd815552fe31b4335",
+        "bytes": 168,
+        "elapsedMs": 3.8932999999960884
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.simplificado",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 7,
+            "obtained": 7,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 7,
+            "obtained": 7,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.simplificado",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "7",
+            "obtained": "7",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "escore-de-genebra",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "TEV prévio, dor unilateral, FC 110 e palpação dolorosa: 15, alta (simplificado 5)",
+      "originalInput": {
+        "tev": true,
+        "dor": true,
+        "fc": "2",
+        "palpacao": true
+      },
+      "input": {
+        "tev": true,
+        "dor": true,
+        "fc": "2",
+        "palpacao": true,
+        "idade65": false,
+        "cirurgia": false,
+        "cancer": false,
+        "hemoptise": false
+      },
+      "amendments": [
+        {
+          "field": "idade65",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "cirurgia",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "cancer",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "hemoptise",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "score": 15,
+        "level": "high",
+        "raw": {
+          "simplificado": 5
+        }
+      },
+      "recordedResult": {
+        "main": [
+          "15",
+          "pontos"
+        ],
+        "label": "Escore de Genebra revisado",
+        "raw": {
+          "score": 15,
+          "simplificado": 5
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/escore-de-genebra/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "tev": true,
+            "dor": true,
+            "fc": "2",
+            "palpacao": true,
+            "idade65": false,
+            "cirurgia": false,
+            "cancer": false,
+            "hemoptise": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/escore-de-genebra/calculate",
+          "startedAt": "2026-10-05T17:37:31.618Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "escore-de-genebra",
+              "main": [
+                "15",
+                "pontos"
+              ],
+              "label": "Escore de Genebra revisado",
+              "raw": {
+                "score": 15,
+                "simplificado": 5
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "9d6804af05f93bd272808f0a20ecba98e762f09f61f0ba3651354ffd9095a80e",
+          "bytes": 170,
+          "elapsedMs": 2.6551999999937834
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/escore-de-genebra/calculate",
+        "startedAt": "2026-10-05T17:37:31.618Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "escore-de-genebra",
+            "main": [
+              "15",
+              "pontos"
+            ],
+            "label": "Escore de Genebra revisado",
+            "raw": {
+              "score": 15,
+              "simplificado": 5
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "9d6804af05f93bd272808f0a20ecba98e762f09f61f0ba3651354ffd9095a80e",
+        "bytes": 170,
+        "elapsedMs": 2.6551999999937834
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.simplificado",
+            "expected": 5,
+            "obtained": 5,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 15,
+            "obtained": 15,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 15,
+            "obtained": 15,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.simplificado",
+            "expected": 5,
+            "obtained": 5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "15",
+            "obtained": "15",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
