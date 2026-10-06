@@ -93,3 +93,55 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Niedrige klinische Wahrscheinlichkeit (Prävalenz von LE von 8%)
+
+| Ergebnisdetails | |
+| --- | --- |
+| 2-Stufen-Modell | LE unwahrscheinlich (0 bis 5) |
+| Vereinfachtes Genf | 0 (niedrige Wahrscheinlichkeit; LE unwahrscheinlich) |
+
+LE unwahrscheinlich: Ein normaler D-Dimer-Wert schließt eine LE ohne Bildgebung aus.
+
+
+### 2
+
+Intermediäre klinische Wahrscheinlichkeit (Prävalenz von LE von 28%)
+
+| Ergebnisdetails | |
+| --- | --- |
+| 2-Stufen-Modell | LE unwahrscheinlich (0 bis 5) |
+| Vereinfachtes Genf | 2 (intermediäre Wahrscheinlichkeit; LE unwahrscheinlich) |
+
+LE unwahrscheinlich: Ein normaler D-Dimer-Wert schließt eine LE ohne Bildgebung aus.
+
+
+### 3
+
+Intermediäre klinische Wahrscheinlichkeit (Prävalenz von LE von 28%)
+
+| Ergebnisdetails | |
+| --- | --- |
+| 2-Stufen-Modell | LE wahrscheinlich (≥ 6) |
+| Vereinfachtes Genf | 3 (intermediäre Wahrscheinlichkeit; LE wahrscheinlich) |
+
+LE wahrscheinlich: CT-Angiographie des Thorax.
+
+
+### 4
+
+Hohe klinische Wahrscheinlichkeit (Prävalenz von LE von 74%)
+
+| Ergebnisdetails | |
+| --- | --- |
+| 2-Stufen-Modell | LE wahrscheinlich (≥ 6) |
+| Vereinfachtes Genf | 5 (hohe Wahrscheinlichkeit; LE wahrscheinlich) |
+
+Hohe Wahrscheinlichkeit: direkt zur CT-Angiographie; D-Dimer sollte nicht zum Ausschluss verwendet werden.
+

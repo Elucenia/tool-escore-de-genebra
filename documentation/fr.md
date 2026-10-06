@@ -93,3 +93,55 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Probabilité clinique faible (prévalence d’EP de 8%)
+
+| Détails du résultat | |
+| --- | --- |
+| Modèle à 2 niveaux | EP improbable (0 à 5) |
+| Genève simplifié | 0 (probabilité faible ; EP improbable) |
+
+EP improbable : un D-dimère normal exclut une EP sans examen d’imagerie.
+
+
+### 2
+
+Probabilité clinique intermédiaire (prévalence d’EP de 28%)
+
+| Détails du résultat | |
+| --- | --- |
+| Modèle à 2 niveaux | EP improbable (0 à 5) |
+| Genève simplifié | 2 (probabilité intermédiaire ; EP improbable) |
+
+EP improbable : un D-dimère normal exclut une EP sans examen d’imagerie.
+
+
+### 3
+
+Probabilité clinique intermédiaire (prévalence d’EP de 28%)
+
+| Détails du résultat | |
+| --- | --- |
+| Modèle à 2 niveaux | EP probable (≥ 6) |
+| Genève simplifié | 3 (probabilité intermédiaire ; EP probable) |
+
+EP probable : angioscanner thoracique.
+
+
+### 4
+
+Probabilité clinique élevée (prévalence d’EP de 74%)
+
+| Détails du résultat | |
+| --- | --- |
+| Modèle à 2 niveaux | EP probable (≥ 6) |
+| Genève simplifié | 5 (probabilité élevée ; EP probable) |
+
+Forte probabilité : aller directement à l’angioscanner ; le D-dimère ne doit pas être utilisé pour exclure.
+

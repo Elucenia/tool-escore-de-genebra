@@ -93,3 +93,55 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Bassa probabilità clinica (prevalenza di EP dell'8%)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Modello a 2 livelli | EP improbabile (0 a 5) |
+| Ginevra semplificata | 0 (probabilità bassa; EP improbabile) |
+
+EP improbabile: un D-dimero normale esclude l'EP senza esame di imaging.
+
+
+### 2
+
+Probabilità clinica intermedia (prevalenza di EP del 28%)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Modello a 2 livelli | EP improbabile (0 a 5) |
+| Ginevra semplificata | 2 (probabilità intermedia; EP improbabile) |
+
+EP improbabile: un D-dimero normale esclude l'EP senza esame di imaging.
+
+
+### 3
+
+Probabilità clinica intermedia (prevalenza di EP del 28%)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Modello a 2 livelli | EP probabile (≥ 6) |
+| Ginevra semplificata | 3 (probabilità intermedia; EP probabile) |
+
+EP probabile: angio-TC toracica.
+
+
+### 4
+
+Alta probabilità clinica (prevalenza di EP del 74%)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Modello a 2 livelli | EP probabile (≥ 6) |
+| Ginevra semplificata | 5 (probabilità alta; EP probabile) |
+
+Alta probabilità: passare direttamente all'angio-TC; il D-dimero non deve essere usato per escludere.
+

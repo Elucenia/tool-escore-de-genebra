@@ -93,3 +93,55 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Low clinical probability (8% prevalence of PE)
+
+| Result details | |
+| --- | --- |
+| 2-level model | PE unlikely (0 to 5) |
+| Simplified Geneva | 0 (low probability; PE unlikely) |
+
+Unlikely PE: a normal D-dimer excludes PE without imaging.
+
+
+### 2
+
+Intermediate clinical probability (28% prevalence of PE)
+
+| Result details | |
+| --- | --- |
+| 2-level model | PE unlikely (0 to 5) |
+| Simplified Geneva | 2 (intermediate probability; PE unlikely) |
+
+Unlikely PE: a normal D-dimer excludes PE without imaging.
+
+
+### 3
+
+Intermediate clinical probability (28% prevalence of PE)
+
+| Result details | |
+| --- | --- |
+| 2-level model | PE likely (≥ 6) |
+| Simplified Geneva | 3 (intermediate probability; PE likely) |
+
+Likely PE: chest CT angiography.
+
+
+### 4
+
+High clinical probability (74% prevalence of PE)
+
+| Result details | |
+| --- | --- |
+| 2-level model | PE likely (≥ 6) |
+| Simplified Geneva | 5 (high probability; PE likely) |
+
+High probability: go straight to CT angiography; D-dimer should not be used to exclude.
+

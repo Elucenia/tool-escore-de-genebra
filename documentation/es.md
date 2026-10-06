@@ -93,3 +93,55 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Probabilidad clínica baja (prevalencia de TEP de 8%)
+
+| Detalles del resultado | |
+| --- | --- |
+| Modelo de 2 niveles | TEP improbable (0 a 5) |
+| Ginebra simplificado | 0 (probabilidad baja; TEP improbable) |
+
+TEP improbable: un dímero D normal excluye la TEP sin prueba de imagen.
+
+
+### 2
+
+Probabilidad clínica intermedia (prevalencia de TEP de 28%)
+
+| Detalles del resultado | |
+| --- | --- |
+| Modelo de 2 niveles | TEP improbable (0 a 5) |
+| Ginebra simplificado | 2 (probabilidad intermedia; TEP improbable) |
+
+TEP improbable: un dímero D normal excluye la TEP sin prueba de imagen.
+
+
+### 3
+
+Probabilidad clínica intermedia (prevalencia de TEP de 28%)
+
+| Detalles del resultado | |
+| --- | --- |
+| Modelo de 2 niveles | TEP probable (≥ 6) |
+| Ginebra simplificado | 3 (probabilidad intermedia; TEP probable) |
+
+TEP probable: angiotomografía de tórax.
+
+
+### 4
+
+Probabilidad clínica alta (prevalencia de TEP de 74%)
+
+| Detalles del resultado | |
+| --- | --- |
+| Modelo de 2 niveles | TEP probable (≥ 6) |
+| Ginebra simplificado | 5 (probabilidad alta; TEP probable) |
+
+Alta probabilidad: ir directamente a la angiotomografía; no se debe usar el dímero D para excluir.
+

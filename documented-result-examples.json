@@ -1,0 +1,1895 @@
+{
+  "id": "escore-de-genebra",
+  "implementationVersion": "escore-de-genebra@native-2026-10-05+56067c91c3f1",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Nenhum item, FC 70: 0 ponto (simplificado 0)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Modelo de 2 níveis",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "TEP improvável (0 a 5)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Genebra simplificado",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0 (probabilidade baixa; TEP improvável)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Probabilidade clínica baixa (prevalência de TEP de 8%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "TEP improvável: D-dímero normal exclui TEP sem exame de imagem.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade 70 e FC 80: 1 + 3 = 4, intermediária (simplificado 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Modelo de 2 níveis",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "TEP improvável (0 a 5)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Genebra simplificado",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "2 (probabilidade intermediária; TEP improvável)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Probabilidade clínica intermediária (prevalência de TEP de 28%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "TEP improvável: D-dímero normal exclui TEP sem exame de imagem.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Cirurgia recente, câncer e FC 80: 7, intermediária e TEP provável (simplificado 3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Modelo de 2 níveis",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "TEP provável (≥ 6)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Genebra simplificado",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3 (probabilidade intermediária; TEP provável)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Probabilidade clínica intermediária (prevalência de TEP de 28%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "TEP provável: angiotomografia de tórax.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "TEV prévio, dor unilateral, FC 110 e palpação dolorosa: 15, alta (simplificado 5)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Modelo de 2 níveis",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "TEP provável (≥ 6)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Genebra simplificado",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "5 (probabilidade alta; TEP provável)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Probabilidade clínica alta (prevalência de TEP de 74%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Alta probabilidade: vá direto à angiotomografia; o D-dímero não deve ser usado para excluir.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Nenhum item, FC 70: 0 ponto (simplificado 0)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "2-level model",
+                "locale": "en",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "PE unlikely (0 to 5)",
+                "locale": "en",
+                "template": "documented-authored-171e18966a39b403a32c"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Simplified Geneva",
+                "locale": "en",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "0 (low probability; PE unlikely)",
+                "locale": "en",
+                "template": "documented-authored-82a17b99b3dd5adc034f",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Low clinical probability (8% prevalence of PE)",
+            "locale": "en",
+            "template": "documented-authored-bc405f808753ed432f44"
+          },
+          "note": {
+            "text": "Unlikely PE: a normal D-dimer excludes PE without imaging.",
+            "locale": "en",
+            "template": "documented-authored-1112e9ce37fcaa26002b"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade 70 e FC 80: 1 + 3 = 4, intermediária (simplificado 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "2-level model",
+                "locale": "en",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "PE unlikely (0 to 5)",
+                "locale": "en",
+                "template": "documented-authored-171e18966a39b403a32c"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Simplified Geneva",
+                "locale": "en",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "2 (intermediate probability; PE unlikely)",
+                "locale": "en",
+                "template": "documented-authored-2abed61a32963d3c52d3",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intermediate clinical probability (28% prevalence of PE)",
+            "locale": "en",
+            "template": "documented-authored-98c82fd1c2082823cb75"
+          },
+          "note": {
+            "text": "Unlikely PE: a normal D-dimer excludes PE without imaging.",
+            "locale": "en",
+            "template": "documented-authored-1112e9ce37fcaa26002b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Cirurgia recente, câncer e FC 80: 7, intermediária e TEP provável (simplificado 3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "2-level model",
+                "locale": "en",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "PE likely (≥ 6)",
+                "locale": "en",
+                "template": "documented-authored-e31f50ab04748dda7e16"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Simplified Geneva",
+                "locale": "en",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "3 (intermediate probability; PE likely)",
+                "locale": "en",
+                "template": "documented-authored-8bcb9118a78e1f7fc76c",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intermediate clinical probability (28% prevalence of PE)",
+            "locale": "en",
+            "template": "documented-authored-98c82fd1c2082823cb75"
+          },
+          "note": {
+            "text": "Likely PE: chest CT angiography.",
+            "locale": "en",
+            "template": "documented-authored-70f7c3f235540c361877"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "TEV prévio, dor unilateral, FC 110 e palpação dolorosa: 15, alta (simplificado 5)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "2-level model",
+                "locale": "en",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "PE likely (≥ 6)",
+                "locale": "en",
+                "template": "documented-authored-e31f50ab04748dda7e16"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Simplified Geneva",
+                "locale": "en",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "5 (high probability; PE likely)",
+                "locale": "en",
+                "template": "documented-authored-d1cb47b70a890599431a",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "High clinical probability (74% prevalence of PE)",
+            "locale": "en",
+            "template": "documented-authored-afcc62fb348344540547"
+          },
+          "note": {
+            "text": "High probability: go straight to CT angiography; D-dimer should not be used to exclude.",
+            "locale": "en",
+            "template": "documented-authored-fc25684aa071a4a2db51"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Nenhum item, FC 70: 0 ponto (simplificado 0)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Modelo de 2 niveles",
+                "locale": "es",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "TEP improbable (0 a 5)",
+                "locale": "es",
+                "template": "documented-authored-171e18966a39b403a32c"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Ginebra simplificado",
+                "locale": "es",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "0 (probabilidad baja; TEP improbable)",
+                "locale": "es",
+                "template": "documented-authored-82a17b99b3dd5adc034f",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Probabilidad clínica baja (prevalencia de TEP de 8%)",
+            "locale": "es",
+            "template": "documented-authored-bc405f808753ed432f44"
+          },
+          "note": {
+            "text": "TEP improbable: un dímero D normal excluye la TEP sin prueba de imagen.",
+            "locale": "es",
+            "template": "documented-authored-1112e9ce37fcaa26002b"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade 70 e FC 80: 1 + 3 = 4, intermediária (simplificado 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Modelo de 2 niveles",
+                "locale": "es",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "TEP improbable (0 a 5)",
+                "locale": "es",
+                "template": "documented-authored-171e18966a39b403a32c"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Ginebra simplificado",
+                "locale": "es",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "2 (probabilidad intermedia; TEP improbable)",
+                "locale": "es",
+                "template": "documented-authored-2abed61a32963d3c52d3",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Probabilidad clínica intermedia (prevalencia de TEP de 28%)",
+            "locale": "es",
+            "template": "documented-authored-98c82fd1c2082823cb75"
+          },
+          "note": {
+            "text": "TEP improbable: un dímero D normal excluye la TEP sin prueba de imagen.",
+            "locale": "es",
+            "template": "documented-authored-1112e9ce37fcaa26002b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Cirurgia recente, câncer e FC 80: 7, intermediária e TEP provável (simplificado 3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Modelo de 2 niveles",
+                "locale": "es",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "TEP probable (≥ 6)",
+                "locale": "es",
+                "template": "documented-authored-e31f50ab04748dda7e16"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Ginebra simplificado",
+                "locale": "es",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "3 (probabilidad intermedia; TEP probable)",
+                "locale": "es",
+                "template": "documented-authored-8bcb9118a78e1f7fc76c",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Probabilidad clínica intermedia (prevalencia de TEP de 28%)",
+            "locale": "es",
+            "template": "documented-authored-98c82fd1c2082823cb75"
+          },
+          "note": {
+            "text": "TEP probable: angiotomografía de tórax.",
+            "locale": "es",
+            "template": "documented-authored-70f7c3f235540c361877"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "TEV prévio, dor unilateral, FC 110 e palpação dolorosa: 15, alta (simplificado 5)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Modelo de 2 niveles",
+                "locale": "es",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "TEP probable (≥ 6)",
+                "locale": "es",
+                "template": "documented-authored-e31f50ab04748dda7e16"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Ginebra simplificado",
+                "locale": "es",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "5 (probabilidad alta; TEP probable)",
+                "locale": "es",
+                "template": "documented-authored-d1cb47b70a890599431a",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Probabilidad clínica alta (prevalencia de TEP de 74%)",
+            "locale": "es",
+            "template": "documented-authored-afcc62fb348344540547"
+          },
+          "note": {
+            "text": "Alta probabilidad: ir directamente a la angiotomografía; no se debe usar el dímero D para excluir.",
+            "locale": "es",
+            "template": "documented-authored-fc25684aa071a4a2db51"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Nenhum item, FC 70: 0 ponto (simplificado 0)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Modèle à 2 niveaux",
+                "locale": "fr",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "EP improbable (0 à 5)",
+                "locale": "fr",
+                "template": "documented-authored-171e18966a39b403a32c"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Genève simplifié",
+                "locale": "fr",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "0 (probabilité faible ; EP improbable)",
+                "locale": "fr",
+                "template": "documented-authored-82a17b99b3dd5adc034f",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Probabilité clinique faible (prévalence d’EP de 8%)",
+            "locale": "fr",
+            "template": "documented-authored-bc405f808753ed432f44"
+          },
+          "note": {
+            "text": "EP improbable : un D-dimère normal exclut une EP sans examen d’imagerie.",
+            "locale": "fr",
+            "template": "documented-authored-1112e9ce37fcaa26002b"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade 70 e FC 80: 1 + 3 = 4, intermediária (simplificado 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Modèle à 2 niveaux",
+                "locale": "fr",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "EP improbable (0 à 5)",
+                "locale": "fr",
+                "template": "documented-authored-171e18966a39b403a32c"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Genève simplifié",
+                "locale": "fr",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "2 (probabilité intermédiaire ; EP improbable)",
+                "locale": "fr",
+                "template": "documented-authored-2abed61a32963d3c52d3",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Probabilité clinique intermédiaire (prévalence d’EP de 28%)",
+            "locale": "fr",
+            "template": "documented-authored-98c82fd1c2082823cb75"
+          },
+          "note": {
+            "text": "EP improbable : un D-dimère normal exclut une EP sans examen d’imagerie.",
+            "locale": "fr",
+            "template": "documented-authored-1112e9ce37fcaa26002b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Cirurgia recente, câncer e FC 80: 7, intermediária e TEP provável (simplificado 3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Modèle à 2 niveaux",
+                "locale": "fr",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "EP probable (≥ 6)",
+                "locale": "fr",
+                "template": "documented-authored-e31f50ab04748dda7e16"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Genève simplifié",
+                "locale": "fr",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "3 (probabilité intermédiaire ; EP probable)",
+                "locale": "fr",
+                "template": "documented-authored-8bcb9118a78e1f7fc76c",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Probabilité clinique intermédiaire (prévalence d’EP de 28%)",
+            "locale": "fr",
+            "template": "documented-authored-98c82fd1c2082823cb75"
+          },
+          "note": {
+            "text": "EP probable : angioscanner thoracique.",
+            "locale": "fr",
+            "template": "documented-authored-70f7c3f235540c361877"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "TEV prévio, dor unilateral, FC 110 e palpação dolorosa: 15, alta (simplificado 5)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Modèle à 2 niveaux",
+                "locale": "fr",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "EP probable (≥ 6)",
+                "locale": "fr",
+                "template": "documented-authored-e31f50ab04748dda7e16"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Genève simplifié",
+                "locale": "fr",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "5 (probabilité élevée ; EP probable)",
+                "locale": "fr",
+                "template": "documented-authored-d1cb47b70a890599431a",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Probabilité clinique élevée (prévalence d’EP de 74%)",
+            "locale": "fr",
+            "template": "documented-authored-afcc62fb348344540547"
+          },
+          "note": {
+            "text": "Forte probabilité : aller directement à l’angioscanner ; le D-dimère ne doit pas être utilisé pour exclure.",
+            "locale": "fr",
+            "template": "documented-authored-fc25684aa071a4a2db51"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Nenhum item, FC 70: 0 ponto (simplificado 0)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "2-Stufen-Modell",
+                "locale": "de",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "LE unwahrscheinlich (0 bis 5)",
+                "locale": "de",
+                "template": "documented-authored-171e18966a39b403a32c"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Vereinfachtes Genf",
+                "locale": "de",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "0 (niedrige Wahrscheinlichkeit; LE unwahrscheinlich)",
+                "locale": "de",
+                "template": "documented-authored-82a17b99b3dd5adc034f",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Niedrige klinische Wahrscheinlichkeit (Prävalenz von LE von 8%)",
+            "locale": "de",
+            "template": "documented-authored-bc405f808753ed432f44"
+          },
+          "note": {
+            "text": "LE unwahrscheinlich: Ein normaler D-Dimer-Wert schließt eine LE ohne Bildgebung aus.",
+            "locale": "de",
+            "template": "documented-authored-1112e9ce37fcaa26002b"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade 70 e FC 80: 1 + 3 = 4, intermediária (simplificado 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "2-Stufen-Modell",
+                "locale": "de",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "LE unwahrscheinlich (0 bis 5)",
+                "locale": "de",
+                "template": "documented-authored-171e18966a39b403a32c"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Vereinfachtes Genf",
+                "locale": "de",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "2 (intermediäre Wahrscheinlichkeit; LE unwahrscheinlich)",
+                "locale": "de",
+                "template": "documented-authored-2abed61a32963d3c52d3",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intermediäre klinische Wahrscheinlichkeit (Prävalenz von LE von 28%)",
+            "locale": "de",
+            "template": "documented-authored-98c82fd1c2082823cb75"
+          },
+          "note": {
+            "text": "LE unwahrscheinlich: Ein normaler D-Dimer-Wert schließt eine LE ohne Bildgebung aus.",
+            "locale": "de",
+            "template": "documented-authored-1112e9ce37fcaa26002b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Cirurgia recente, câncer e FC 80: 7, intermediária e TEP provável (simplificado 3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "2-Stufen-Modell",
+                "locale": "de",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "LE wahrscheinlich (≥ 6)",
+                "locale": "de",
+                "template": "documented-authored-e31f50ab04748dda7e16"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Vereinfachtes Genf",
+                "locale": "de",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "3 (intermediäre Wahrscheinlichkeit; LE wahrscheinlich)",
+                "locale": "de",
+                "template": "documented-authored-8bcb9118a78e1f7fc76c",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Intermediäre klinische Wahrscheinlichkeit (Prävalenz von LE von 28%)",
+            "locale": "de",
+            "template": "documented-authored-98c82fd1c2082823cb75"
+          },
+          "note": {
+            "text": "LE wahrscheinlich: CT-Angiographie des Thorax.",
+            "locale": "de",
+            "template": "documented-authored-70f7c3f235540c361877"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "TEV prévio, dor unilateral, FC 110 e palpação dolorosa: 15, alta (simplificado 5)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "2-Stufen-Modell",
+                "locale": "de",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "LE wahrscheinlich (≥ 6)",
+                "locale": "de",
+                "template": "documented-authored-e31f50ab04748dda7e16"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Vereinfachtes Genf",
+                "locale": "de",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "5 (hohe Wahrscheinlichkeit; LE wahrscheinlich)",
+                "locale": "de",
+                "template": "documented-authored-d1cb47b70a890599431a",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Hohe klinische Wahrscheinlichkeit (Prävalenz von LE von 74%)",
+            "locale": "de",
+            "template": "documented-authored-afcc62fb348344540547"
+          },
+          "note": {
+            "text": "Hohe Wahrscheinlichkeit: direkt zur CT-Angiographie; D-Dimer sollte nicht zum Ausschluss verwendet werden.",
+            "locale": "de",
+            "template": "documented-authored-fc25684aa071a4a2db51"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Nenhum item, FC 70: 0 ponto (simplificado 0)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Modello a 2 livelli",
+                "locale": "it",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "EP improbabile (0 a 5)",
+                "locale": "it",
+                "template": "documented-authored-171e18966a39b403a32c"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Ginevra semplificata",
+                "locale": "it",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "0 (probabilità bassa; EP improbabile)",
+                "locale": "it",
+                "template": "documented-authored-82a17b99b3dd5adc034f",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Bassa probabilità clinica (prevalenza di EP dell'8%)",
+            "locale": "it",
+            "template": "documented-authored-bc405f808753ed432f44"
+          },
+          "note": {
+            "text": "EP improbabile: un D-dimero normale esclude l'EP senza esame di imaging.",
+            "locale": "it",
+            "template": "documented-authored-1112e9ce37fcaa26002b"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade 70 e FC 80: 1 + 3 = 4, intermediária (simplificado 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Modello a 2 livelli",
+                "locale": "it",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "EP improbabile (0 a 5)",
+                "locale": "it",
+                "template": "documented-authored-171e18966a39b403a32c"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Ginevra semplificata",
+                "locale": "it",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "2 (probabilità intermedia; EP improbabile)",
+                "locale": "it",
+                "template": "documented-authored-2abed61a32963d3c52d3",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Probabilità clinica intermedia (prevalenza di EP del 28%)",
+            "locale": "it",
+            "template": "documented-authored-98c82fd1c2082823cb75"
+          },
+          "note": {
+            "text": "EP improbabile: un D-dimero normale esclude l'EP senza esame di imaging.",
+            "locale": "it",
+            "template": "documented-authored-1112e9ce37fcaa26002b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Cirurgia recente, câncer e FC 80: 7, intermediária e TEP provável (simplificado 3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Modello a 2 livelli",
+                "locale": "it",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "EP probabile (≥ 6)",
+                "locale": "it",
+                "template": "documented-authored-e31f50ab04748dda7e16"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Ginevra semplificata",
+                "locale": "it",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "3 (probabilità intermedia; EP probabile)",
+                "locale": "it",
+                "template": "documented-authored-8bcb9118a78e1f7fc76c",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Probabilità clinica intermedia (prevalenza di EP del 28%)",
+            "locale": "it",
+            "template": "documented-authored-98c82fd1c2082823cb75"
+          },
+          "note": {
+            "text": "EP probabile: angio-TC toracica.",
+            "locale": "it",
+            "template": "documented-authored-70f7c3f235540c361877"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "TEV prévio, dor unilateral, FC 110 e palpação dolorosa: 15, alta (simplificado 5)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Modello a 2 livelli",
+                "locale": "it",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "EP probabile (≥ 6)",
+                "locale": "it",
+                "template": "documented-authored-e31f50ab04748dda7e16"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Ginevra semplificata",
+                "locale": "it",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "5 (probabilità alta; EP probabile)",
+                "locale": "it",
+                "template": "documented-authored-d1cb47b70a890599431a",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Alta probabilità clinica (prevalenza di EP del 74%)",
+            "locale": "it",
+            "template": "documented-authored-afcc62fb348344540547"
+          },
+          "note": {
+            "text": "Alta probabilità: passare direttamente all'angio-TC; il D-dimero non deve essere usato per escludere.",
+            "locale": "it",
+            "template": "documented-authored-fc25684aa071a4a2db51"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Nenhum item, FC 70: 0 ponto (simplificado 0)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نموذج من مستويين",
+                "locale": "ar",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "الانصمام الرئوي غير محتمل (0 إلى 5)",
+                "locale": "ar",
+                "template": "documented-authored-171e18966a39b403a32c"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "جنيف المبسط",
+                "locale": "ar",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "٠ (احتمال منخفض؛ الانصمام الرئوي غير محتمل)",
+                "locale": "ar",
+                "template": "documented-authored-82a17b99b3dd5adc034f",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "احتمال سريري منخفض (انتشار الانصمام الرئوي 8%)",
+            "locale": "ar",
+            "template": "documented-authored-bc405f808753ed432f44"
+          },
+          "note": {
+            "text": "الانصمام الرئوي غير محتمل: يستبعد D-dimer الطبيعي الانصمام الرئوي دون فحص تصويري.",
+            "locale": "ar",
+            "template": "documented-authored-1112e9ce37fcaa26002b"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade 70 e FC 80: 1 + 3 = 4, intermediária (simplificado 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نموذج من مستويين",
+                "locale": "ar",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "الانصمام الرئوي غير محتمل (0 إلى 5)",
+                "locale": "ar",
+                "template": "documented-authored-171e18966a39b403a32c"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "جنيف المبسط",
+                "locale": "ar",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "٢ (احتمال متوسط؛ الانصمام الرئوي غير محتمل)",
+                "locale": "ar",
+                "template": "documented-authored-2abed61a32963d3c52d3",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "احتمال سريري متوسط (انتشار الانصمام الرئوي 28%)",
+            "locale": "ar",
+            "template": "documented-authored-98c82fd1c2082823cb75"
+          },
+          "note": {
+            "text": "الانصمام الرئوي غير محتمل: يستبعد D-dimer الطبيعي الانصمام الرئوي دون فحص تصويري.",
+            "locale": "ar",
+            "template": "documented-authored-1112e9ce37fcaa26002b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Cirurgia recente, câncer e FC 80: 7, intermediária e TEP provável (simplificado 3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نموذج من مستويين",
+                "locale": "ar",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "الانصمام الرئوي محتمل (≥ 6)",
+                "locale": "ar",
+                "template": "documented-authored-e31f50ab04748dda7e16"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "جنيف المبسط",
+                "locale": "ar",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "٣ (احتمال متوسط؛ الانصمام الرئوي محتمل)",
+                "locale": "ar",
+                "template": "documented-authored-8bcb9118a78e1f7fc76c",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "احتمال سريري متوسط (انتشار الانصمام الرئوي 28%)",
+            "locale": "ar",
+            "template": "documented-authored-98c82fd1c2082823cb75"
+          },
+          "note": {
+            "text": "الانصمام الرئوي محتمل: تصوير الأوعية المقطعي للصدر.",
+            "locale": "ar",
+            "template": "documented-authored-70f7c3f235540c361877"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "TEV prévio, dor unilateral, FC 110 e palpação dolorosa: 15, alta (simplificado 5)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نموذج من مستويين",
+                "locale": "ar",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "الانصمام الرئوي محتمل (≥ 6)",
+                "locale": "ar",
+                "template": "documented-authored-e31f50ab04748dda7e16"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "جنيف المبسط",
+                "locale": "ar",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "٥ (احتمال مرتفع؛ الانصمام الرئوي محتمل)",
+                "locale": "ar",
+                "template": "documented-authored-d1cb47b70a890599431a",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "احتمال سريري مرتفع (انتشار الانصمام الرئوي 74%)",
+            "locale": "ar",
+            "template": "documented-authored-afcc62fb348344540547"
+          },
+          "note": {
+            "text": "احتمال مرتفع: انتقل مباشرة إلى تصوير الأوعية المقطعي؛ لا ينبغي استخدام D-dimer للاستبعاد.",
+            "locale": "ar",
+            "template": "documented-authored-fc25684aa071a4a2db51"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Nenhum item, FC 70: 0 ponto (simplificado 0)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "2级模型",
+                "locale": "zh",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "PE不太可能（0到5）",
+                "locale": "zh",
+                "template": "documented-authored-171e18966a39b403a32c"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "简化版日内瓦",
+                "locale": "zh",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "0（低概率；PE不太可能）",
+                "locale": "zh",
+                "template": "documented-authored-82a17b99b3dd5adc034f",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "临床低概率（PE患病率为8%）",
+            "locale": "zh",
+            "template": "documented-authored-bc405f808753ed432f44"
+          },
+          "note": {
+            "text": "PE不太可能：正常的D-二聚体可在无需影像学检查的情况下排除PE。",
+            "locale": "zh",
+            "template": "documented-authored-1112e9ce37fcaa26002b"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade 70 e FC 80: 1 + 3 = 4, intermediária (simplificado 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "2级模型",
+                "locale": "zh",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "PE不太可能（0到5）",
+                "locale": "zh",
+                "template": "documented-authored-171e18966a39b403a32c"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "简化版日内瓦",
+                "locale": "zh",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "2（中等概率；PE不太可能）",
+                "locale": "zh",
+                "template": "documented-authored-2abed61a32963d3c52d3",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "临床中等概率（PE患病率为28%）",
+            "locale": "zh",
+            "template": "documented-authored-98c82fd1c2082823cb75"
+          },
+          "note": {
+            "text": "PE不太可能：正常的D-二聚体可在无需影像学检查的情况下排除PE。",
+            "locale": "zh",
+            "template": "documented-authored-1112e9ce37fcaa26002b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Cirurgia recente, câncer e FC 80: 7, intermediária e TEP provável (simplificado 3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "2级模型",
+                "locale": "zh",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "PE可能性大（≥ 6）",
+                "locale": "zh",
+                "template": "documented-authored-e31f50ab04748dda7e16"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "简化版日内瓦",
+                "locale": "zh",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "3（中等概率；PE可能性大）",
+                "locale": "zh",
+                "template": "documented-authored-8bcb9118a78e1f7fc76c",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "临床中等概率（PE患病率为28%）",
+            "locale": "zh",
+            "template": "documented-authored-98c82fd1c2082823cb75"
+          },
+          "note": {
+            "text": "PE可能性大：胸部CT血管造影。",
+            "locale": "zh",
+            "template": "documented-authored-70f7c3f235540c361877"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "TEV prévio, dor unilateral, FC 110 e palpação dolorosa: 15, alta (simplificado 5)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "2级模型",
+                "locale": "zh",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "PE可能性大（≥ 6）",
+                "locale": "zh",
+                "template": "documented-authored-e31f50ab04748dda7e16"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "简化版日内瓦",
+                "locale": "zh",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "5（高概率；PE可能性大）",
+                "locale": "zh",
+                "template": "documented-authored-d1cb47b70a890599431a",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "临床高概率（PE患病率为74%）",
+            "locale": "zh",
+            "template": "documented-authored-afcc62fb348344540547"
+          },
+          "note": {
+            "text": "高概率：直接进行CT血管造影；不应使用D-二聚体进行排除。",
+            "locale": "zh",
+            "template": "documented-authored-fc25684aa071a4a2db51"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Nenhum item, FC 70: 0 ponto (simplificado 0)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "2段階モデル",
+                "locale": "ja",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "PEは考えにくい（0～5）",
+                "locale": "ja",
+                "template": "documented-authored-171e18966a39b403a32c"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "簡略版ジュネーブ",
+                "locale": "ja",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "0（低確率；PEは考えにくい）",
+                "locale": "ja",
+                "template": "documented-authored-82a17b99b3dd5adc034f",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "臨床的確率が低い（PEの有病率8%）",
+            "locale": "ja",
+            "template": "documented-authored-bc405f808753ed432f44"
+          },
+          "note": {
+            "text": "PEは考えにくい：Dダイマーが正常なら、画像検査なしでPEを除外する。",
+            "locale": "ja",
+            "template": "documented-authored-1112e9ce37fcaa26002b"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade 70 e FC 80: 1 + 3 = 4, intermediária (simplificado 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "2段階モデル",
+                "locale": "ja",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "PEは考えにくい（0～5）",
+                "locale": "ja",
+                "template": "documented-authored-171e18966a39b403a32c"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "簡略版ジュネーブ",
+                "locale": "ja",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "2（中等度の確率；PEは考えにくい）",
+                "locale": "ja",
+                "template": "documented-authored-2abed61a32963d3c52d3",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "臨床的確率が中等度（PEの有病率28%）",
+            "locale": "ja",
+            "template": "documented-authored-98c82fd1c2082823cb75"
+          },
+          "note": {
+            "text": "PEは考えにくい：Dダイマーが正常なら、画像検査なしでPEを除外する。",
+            "locale": "ja",
+            "template": "documented-authored-1112e9ce37fcaa26002b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Cirurgia recente, câncer e FC 80: 7, intermediária e TEP provável (simplificado 3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "2段階モデル",
+                "locale": "ja",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "PEが疑われる（≥ 6）",
+                "locale": "ja",
+                "template": "documented-authored-e31f50ab04748dda7e16"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "簡略版ジュネーブ",
+                "locale": "ja",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "3（中等度の確率；PEが疑われる）",
+                "locale": "ja",
+                "template": "documented-authored-8bcb9118a78e1f7fc76c",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "臨床的確率が中等度（PEの有病率28%）",
+            "locale": "ja",
+            "template": "documented-authored-98c82fd1c2082823cb75"
+          },
+          "note": {
+            "text": "PEが疑われる：胸部CT血管造影。",
+            "locale": "ja",
+            "template": "documented-authored-70f7c3f235540c361877"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "TEV prévio, dor unilateral, FC 110 e palpação dolorosa: 15, alta (simplificado 5)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "2段階モデル",
+                "locale": "ja",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "PEが疑われる（≥ 6）",
+                "locale": "ja",
+                "template": "documented-authored-e31f50ab04748dda7e16"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "簡略版ジュネーブ",
+                "locale": "ja",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "5（高確率；PEが疑われる）",
+                "locale": "ja",
+                "template": "documented-authored-d1cb47b70a890599431a",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "臨床的確率が高い（PEの有病率74%）",
+            "locale": "ja",
+            "template": "documented-authored-afcc62fb348344540547"
+          },
+          "note": {
+            "text": "高確率：そのままCT血管造影へ進む。Dダイマーは除外に用いるべきではない。",
+            "locale": "ja",
+            "template": "documented-authored-fc25684aa071a4a2db51"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Nenhum item, FC 70: 0 ponto (simplificado 0)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "2-स्तरीय मॉडल",
+                "locale": "hi",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "TEP असंभाव्य (0 से 5)",
+                "locale": "hi",
+                "template": "documented-authored-171e18966a39b403a32c"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "सरलीकृत जेनेवा",
+                "locale": "hi",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "0 (निम्न संभावना; TEP असंभाव्य)",
+                "locale": "hi",
+                "template": "documented-authored-82a17b99b3dd5adc034f",
+                "sourceNumbers": [
+                  0
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "निम्न नैदानिक संभावना (PE की 8% प्रचलनता)",
+            "locale": "hi",
+            "template": "documented-authored-bc405f808753ed432f44"
+          },
+          "note": {
+            "text": "फुफ्फुसीय एम्बोलिज़्म की संभावना कम: सामान्य D-dimer बिना इमेजिंग के फुफ्फुसीय एम्बोलिज़्म को खारिज करता है।",
+            "locale": "hi",
+            "template": "documented-authored-1112e9ce37fcaa26002b"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade 70 e FC 80: 1 + 3 = 4, intermediária (simplificado 2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "2-स्तरीय मॉडल",
+                "locale": "hi",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "TEP असंभाव्य (0 से 5)",
+                "locale": "hi",
+                "template": "documented-authored-171e18966a39b403a32c"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "सरलीकृत जेनेवा",
+                "locale": "hi",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "2 (मध्यवर्ती संभावना; TEP असंभाव्य)",
+                "locale": "hi",
+                "template": "documented-authored-2abed61a32963d3c52d3",
+                "sourceNumbers": [
+                  2
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "मध्यवर्ती नैदानिक संभावना (PE की 28% प्रचलनता)",
+            "locale": "hi",
+            "template": "documented-authored-98c82fd1c2082823cb75"
+          },
+          "note": {
+            "text": "फुफ्फुसीय एम्बोलिज़्म की संभावना कम: सामान्य D-dimer बिना इमेजिंग के फुफ्फुसीय एम्बोलिज़्म को खारिज करता है।",
+            "locale": "hi",
+            "template": "documented-authored-1112e9ce37fcaa26002b"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Cirurgia recente, câncer e FC 80: 7, intermediária e TEP provável (simplificado 3)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "2-स्तरीय मॉडल",
+                "locale": "hi",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "TEP संभावित (≥ 6)",
+                "locale": "hi",
+                "template": "documented-authored-e31f50ab04748dda7e16"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "सरलीकृत जेनेवा",
+                "locale": "hi",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "3 (मध्यवर्ती संभावना; TEP संभावित)",
+                "locale": "hi",
+                "template": "documented-authored-8bcb9118a78e1f7fc76c",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "मध्यवर्ती नैदानिक संभावना (PE की 28% प्रचलनता)",
+            "locale": "hi",
+            "template": "documented-authored-98c82fd1c2082823cb75"
+          },
+          "note": {
+            "text": "TEP संभावित: छाती की CT एंजियोग्राफी।",
+            "locale": "hi",
+            "template": "documented-authored-70f7c3f235540c361877"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "TEV prévio, dor unilateral, FC 110 e palpação dolorosa: 15, alta (simplificado 5)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "2-स्तरीय मॉडल",
+                "locale": "hi",
+                "template": "documented-authored-9ffd88782ce5c7d59a5a"
+              },
+              "value": {
+                "text": "TEP संभावित (≥ 6)",
+                "locale": "hi",
+                "template": "documented-authored-e31f50ab04748dda7e16"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "सरलीकृत जेनेवा",
+                "locale": "hi",
+                "template": "documented-authored-68c3728558eeb8ddd4c3"
+              },
+              "value": {
+                "text": "5 (उच्च संभावना; TEP संभावित)",
+                "locale": "hi",
+                "template": "documented-authored-d1cb47b70a890599431a",
+                "sourceNumbers": [
+                  5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "उच्च नैदानिक संभावना (PE की 74% प्रचलनता)",
+            "locale": "hi",
+            "template": "documented-authored-afcc62fb348344540547"
+          },
+          "note": {
+            "text": "उच्च संभावना: सीधे CT एंजियोग्राफी करें; D-dimer का उपयोग बाहर करने के लिए नहीं करना चाहिए।",
+            "locale": "hi",
+            "template": "documented-authored-fc25684aa071a4a2db51"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

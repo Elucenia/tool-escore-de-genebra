@@ -332,7 +332,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Revised Geneva/Le Gal 2006 e Simplified Revised Geneva/Klok 2008; pesos separados",
-    "implementationVersion": "escore-de-genebra@native-2026-10-03+9fa81b0872d1",
+    "implementationVersion": "escore-de-genebra@native-2026-10-05+56067c91c3f1",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/16461960/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -657,7 +657,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "9fa81b0872d1d64e13c77fb5b04cc9b4a7f7b3d6cbf75b04af8e6338232f4f75"
+      "implementationHash": "56067c91c3f1250c76ee87a804d33f33f04295cbcd84baa6b1f9c2389e0e2f5a",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "escore-de-genebra@native-2026-10-03+9fa81b0872d1",
+          "previousImplementationHash": "9fa81b0872d1d64e13c77fb5b04cc9b4a7f7b3d6cbf75b04af8e6338232f4f75",
+          "implementationHash": "56067c91c3f1250c76ee87a804d33f33f04295cbcd84baa6b1f9c2389e0e2f5a",
+          "scientificBodySha256": "458e265b14f1dc7f0c657834415c9d67a804d94b093d3e1f4eea83fefef8a3ed",
+          "metadataContractHash": "7f8e839347c0f8d9ebde1d09c44475bb69296d8d2e9b1a1d3d8202ce64c9dbb4",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O Genebra revisado de 2006 foi estudado em pessoas com suspeita clínica de embolia pulmonar em emergência. A pontuação exige as definições da edição, incluindo cirurgia/fratura no mês anterior e categorias específicas de frequência cardíaca; a versão simplificada possui pesos próprios. Probabilidade baixa não significa ausência de embolia e precisa ser integrada ao protocolo diagnóstico.",
     "sourceLimitEvidence": {
@@ -676,20 +704,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/escore-de-genebra/calculator.js",
-    "bytes": 5829,
-    "sha256": "9fa81b0872d1d64e13c77fb5b04cc9b4a7f7b3d6cbf75b04af8e6338232f4f75"
+    "bytes": 6034,
+    "sha256": "56067c91c3f1250c76ee87a804d33f33f04295cbcd84baa6b1f9c2389e0e2f5a"
   },
-  "sourceToolSha256": "1675a8f20158eca8a3a3e12f50402a0acb528c5958a15304a57c275839cafba7",
+  "sourceToolSha256": "6ab6b4421abda441ed4b31b314145e568ef3b6b423e3db94c93bf1792f2f7c58",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "b867f3e9b97ab7cab4b81ad42393e3f79b6a497f0c582e027f841e46896907e1",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "b867f3e9b97ab7cab4b81ad42393e3f79b6a497f0c582e027f841e46896907e1",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

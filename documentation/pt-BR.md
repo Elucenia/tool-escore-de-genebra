@@ -93,3 +93,55 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Probabilidade clínica baixa (prevalência de TEP de 8%)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Modelo de 2 níveis | TEP improvável (0 a 5) |
+| Genebra simplificado | 0 (probabilidade baixa; TEP improvável) |
+
+TEP improvável: D-dímero normal exclui TEP sem exame de imagem.
+
+
+### 2
+
+Probabilidade clínica intermediária (prevalência de TEP de 28%)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Modelo de 2 níveis | TEP improvável (0 a 5) |
+| Genebra simplificado | 2 (probabilidade intermediária; TEP improvável) |
+
+TEP improvável: D-dímero normal exclui TEP sem exame de imagem.
+
+
+### 3
+
+Probabilidade clínica intermediária (prevalência de TEP de 28%)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Modelo de 2 níveis | TEP provável (≥ 6) |
+| Genebra simplificado | 3 (probabilidade intermediária; TEP provável) |
+
+TEP provável: angiotomografia de tórax.
+
+
+### 4
+
+Probabilidade clínica alta (prevalência de TEP de 74%)
+
+| Detalhes do resultado | |
+| --- | --- |
+| Modelo de 2 níveis | TEP provável (≥ 6) |
+| Genebra simplificado | 5 (probabilidade alta; TEP provável) |
+
+Alta probabilidade: vá direto à angiotomografia; o D-dímero não deve ser usado para excluir.
+
